@@ -1,0 +1,9 @@
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\bin\Debug\ToDolist.exe.config
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\bin\Debug\ToDolist.exe
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\bin\Debug\ToDolist.pdb
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.csprojResolveAssemblyReference.cache
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.Form1.resources
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.Properties.Resources.resources
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.csproj.GenerateResource.Cache
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.exe
+c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.pdb
