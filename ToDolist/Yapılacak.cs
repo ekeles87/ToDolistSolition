@@ -15,7 +15,10 @@ namespace ToDolist
 
         public override string ToString()
         {
-            return not;
+            if (!durum)
+                return  string.Format("({0}) {1}", iszaman.ToShortDateString(), not); 
+            else
+                return string.Format("({0}) ({1}) {2}", tamtarih.ToShortDateString(), iszaman.ToShortDateString(), not);
         }
     }
 }

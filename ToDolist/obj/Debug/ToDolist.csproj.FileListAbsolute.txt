@@ -7,3 +7,4 @@ c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\ob
 c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.csproj.GenerateResource.Cache
 c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.exe
 c:\users\temp\documents\visual studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.pdb
+C:\Users\TEMP\Documents\Visual Studio 2015\Projects\ToDolistSolition\ToDolist\obj\Debug\ToDolist.Form2.resources

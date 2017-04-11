@@ -35,6 +35,7 @@
             this.newToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.cutToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.copyToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -42,15 +43,14 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.EskiGstrBtn = new System.Windows.Forms.Button();
             this.Silbtn = new System.Windows.Forms.Button();
             this.dznbtn = new System.Windows.Forms.Button();
             this.kydbtn = new System.Windows.Forms.Button();
             this.textBox = new System.Windows.Forms.TextBox();
             this.chckdListBox = new System.Windows.Forms.CheckedListBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.printToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -122,6 +122,15 @@
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.saveToolStripButton.Text = "&Save";
+            // 
+            // printToolStripButton
+            // 
+            this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.printToolStripButton.Image = global::ToDolist.Properties.Resources.checklist_16;
+            this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripButton.Name = "printToolStripButton";
+            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.printToolStripButton.Text = "&Print";
             // 
             // toolStripSeparator
             // 
@@ -198,6 +207,27 @@
             this.splitContainer1.SplitterWidth = 7;
             this.splitContainer1.TabIndex = 2;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
+            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(248, 73);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(207, 26);
+            this.dateTimePicker1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(43, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 19);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Yapılacaklar";
+            // 
             // EskiGstrBtn
             // 
             this.EskiGstrBtn.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -208,6 +238,7 @@
             this.EskiGstrBtn.TabIndex = 3;
             this.EskiGstrBtn.Text = "Eski Kayıtlar";
             this.EskiGstrBtn.UseVisualStyleBackColor = true;
+            this.EskiGstrBtn.Click += new System.EventHandler(this.EskiGstrBtn_Click);
             // 
             // Silbtn
             // 
@@ -266,37 +297,9 @@
             this.chckdListBox.Name = "chckdListBox";
             this.chckdListBox.Size = new System.Drawing.Size(460, 344);
             this.chckdListBox.TabIndex = 0;
+            this.chckdListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.chckdListBox_ItemCheck);
             this.chckdListBox.SelectedIndexChanged += new System.EventHandler(this.chckdListBox_SelectedIndexChanged);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.HotTrack;
-            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(248, 73);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(207, 26);
-            this.dateTimePicker1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Yapılacaklar";
-            // 
-            // printToolStripButton
-            // 
-            this.printToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.printToolStripButton.Image = global::ToDolist.Properties.Resources.checklist_16;
-            this.printToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripButton.Name = "printToolStripButton";
-            this.printToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.printToolStripButton.Text = "&Print";
+            this.chckdListBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chckdListBox_MouseUp);
             // 
             // Form1
             // 
@@ -318,6 +321,7 @@
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Yapılacaklar";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
