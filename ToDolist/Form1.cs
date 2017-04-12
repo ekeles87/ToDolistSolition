@@ -37,6 +37,7 @@ namespace ToDolist
             {
                 if(notlar.durum== false)
                 this.chckdListBox.Items.Add(notlar);
+                
             }
         }
 
@@ -100,23 +101,21 @@ namespace ToDolist
 
         private void chckdListBox_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            if(e.NewValue == CheckState.Checked)
+            if (e.NewValue == CheckState.Checked)
             {
                 Yapılacak sec = (Yapılacak)chckdListBox.SelectedItem;
                 sec.durum = true;
                 sec.tamtarih = DateTime.Now;
                 yapılacakKaydet();
             }
-        }
 
-        private void chckdListBox_MouseUp(object sender, MouseEventArgs e)
-        {
             if (chckdListBox.CheckedItems.Count > 0)
                 this.listdoldur();
 
-            this.textBox.Clear();
+                     this.textBox.Clear();
         }
 
+  
         private void EskiGstrBtn_Click(object sender, EventArgs e)
         {
             Form2 newForm = new Form2();

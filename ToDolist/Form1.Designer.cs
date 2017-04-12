@@ -296,10 +296,10 @@
             this.chckdListBox.Location = new System.Drawing.Point(0, 0);
             this.chckdListBox.Name = "chckdListBox";
             this.chckdListBox.Size = new System.Drawing.Size(460, 344);
+            this.chckdListBox.Sorted = true;
             this.chckdListBox.TabIndex = 0;
             this.chckdListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.chckdListBox_ItemCheck);
             this.chckdListBox.SelectedIndexChanged += new System.EventHandler(this.chckdListBox_SelectedIndexChanged);
-            this.chckdListBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.chckdListBox_MouseUp);
             // 
             // Form1
             // 
