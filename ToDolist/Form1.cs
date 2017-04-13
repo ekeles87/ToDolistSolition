@@ -109,8 +109,7 @@ namespace ToDolist
                 yapılacakKaydet();
             }
 
-            if (chckdListBox.CheckedItems.Count > 0)
-                this.listdoldur();
+          
 
                      this.textBox.Clear();
         }
@@ -120,6 +119,12 @@ namespace ToDolist
         {
             Form2 newForm = new Form2();
             newForm.ShowDialog();
+        }
+
+        private void chckdListBox_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (chckdListBox.CheckedItems.Count > 0)
+                this.listdoldur();
         }
     }
 }

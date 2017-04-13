@@ -69,6 +69,7 @@
             this.listBox1.Location = new System.Drawing.Point(16, 40);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(245, 316);
+            this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 3;
             // 
             // button1
